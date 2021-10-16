@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.interface{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03071e;
+}
+
+.interface .container-card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ede0d4;
+}
+
+.container-card .content-top{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.content-top h1{
+    margin: 0 1rem;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #121212;
+}
+
+.container-card .content-main{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-main .content-task{
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-task .task{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.task .checkTask{
+    width: 1rem;
+    height: 1rem;
+    border: 0.1rem solid #06d6a0;
+}
+
+.task .checkTask:focus{
+    box-shadow: 0 0 0 0.05rem #fff, 0 0 0.15rem 0.1rem #06d6a0;
+}
+
+.task label{
+    margin-left: 10px;
+}
+
+.content-task .deleteBtn{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.deleteBtn svg{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.container-card .content-bottom{
+    width: 100%;
+}
+
+.content-bottom .content-input-add{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+
+.content-input-add #add-input, .content-input-add #addBtn{
+    border: none;
+}
+
+.content-input-add #add-input{
+    width: 100%;
+    outline: none;
+    padding: 0 10px;
+    letter-spacing: .4px;
+    background-color: #ffffff;
+}
+
+.content-input-add #addBtn{
+    padding: 0 15px;
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: #fefae0;
+    background: #457b9d;
+}
